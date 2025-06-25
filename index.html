@@ -3,45 +3,44 @@
 <html lang="hi">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>S. S Namkeen - Kota, Rajasthan</title>
-  <style>
-    body { font-family: sans-serif; margin: 0; padding: 0; background: #fffdf5; color: #333; }
-    header { background: #ffcc00; padding: 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2em; }
-    section { padding: 20px; }
-    h2 { color: #d48806; }
-    .product-list li { margin-bottom: 10px; }
-    footer { background: #f0f0f0; text-align: center; padding: 15px; font-size: 0.9em; }
-    .btn { display: inline-block; background: #f57c00; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-  </style>
+  <title>S.S. Namkeen</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>S. S Namkeen</h1>
-    <p>स्वाद में जो खास, भरोसे में बेमिसाल!</p>
-  </header>
+  <div class="header">
+    <h1 id="title">एस.एस. नमकीन</h1>
+    <select id="langSelector" onchange="toggleLanguage()">
+      <option value="hi">हिंदी</option>
+      <option value="en">English</option>
+    </select>
+  </div>
 
-  <section>
-    <h2>हमारे प्रोडक्ट्स / Our Products</h2>
-    <ul class="product-list">
-      <li>भुजिया सेव</li>
-      <li>आलू भुजिया</li>
-      <li>मसाला मिक्सचर</li>
-      <li>मटर नमकीन</li>
-      <li>कस्टम ऑर्डर उपलब्ध</li>
-    </ul>
-  </section>
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150?text=Mixture" alt="Mixture">
+      <h2 class="name" data-hi="मिक्सचर" data-en="Mixture">मिक्सचर</h2>
+      <p class="price" data-hi="₹120 / किलो" data-en="₹120 / kg">₹120 / किलो</p>
+      <p class="desc" data-hi="मसालेदार मिक्स नमकीन" data-en="Spicy mix snack">मसालेदार मिक्स नमकीन</p>
+      <a href="product1.html" class="detailBtn" data-hi="विवरण देखें" data-en="View Details">विवरण देखें</a>
+    </div>
 
-  <section>
-    <h2>संपर्क करें / Contact Us</h2>
-    <p><strong>मोबाइल:</strong> <a href="tel:7375931261">7375931261</a></p>
-    <p><strong>WhatsApp:</strong> <a class="btn" href="https://wa.me/917375931261">व्हाट्सऐप पर ऑर्डर करें</a></p>
-    <p><strong>पता:</strong> कोटा, राजस्थान</p>
-  </section>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150?text=Chana+Dal" alt="Chana Dal">
+      <h2 class="name" data-hi="चना दाल" data-en="Chana Dal">चना दाल</h2>
+      <p class="price" data-hi="₹90 / किलो" data-en="₹90 / kg">₹90 / किलो</p>
+      <p class="desc" data-hi="कुरकुरी दाल नमकीन" data-en="Crispy chana snack">कुरकुरी दाल नमकीन</p>
+      <a href="product2.html" class="detailBtn" data-hi="विवरण देखें" data-en="View Details">विवरण देखें</a>
+    </div>
 
-  <footer>
-    © 2025 S. S Namkeen | Made with ❤️ in Kota
-  </footer>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150?text=Bhujia" alt="Bhujia">
+      <h2 class="name" data-hi="भुजिया सेव" data-en="Bhujia Sev">भुजिया सेव</h2>
+      <p class="price" data-hi="₹100 / किलो" data-en="₹100 / kg">₹100 / किलो</p>
+      <p class="desc" data-hi="तीखी सेव नमकीन" data-en="Spicy bhujia sev">तीखी सेव नमकीन</p>
+      <a href="product3.html" class="detailBtn" data-hi="विवरण देखें" data-en="View Details">विवरण देखें</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

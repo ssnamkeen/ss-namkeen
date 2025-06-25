@@ -1,0 +1,33 @@
+
+body {
+  font-family: sans-serif;
+  background: #fff8e1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.header {
+  background-color: #ff9800;
+  color: white;
+  padding: 15px;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product {
+  background: white;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  width: 250px;
+}
+img {
+  width: 200px;
+  height: 150px;
+}
+select {
+  margin-left: 15px;
+}
