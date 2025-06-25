@@ -1,4 +1,3 @@
-
 function toggleLanguage() {
   const lang = document.getElementById("langSelector").value;
   document.querySelectorAll(".name").forEach(el => el.textContent = el.getAttribute("data-" + lang));

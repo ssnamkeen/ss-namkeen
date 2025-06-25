@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="hi">
 <head>
@@ -17,5 +16,12 @@
     <p>₹120 / किलो</p>
     <p>मसालेदार मिक्स नमकीन, हर उम्र के लिए</p>
   </div>
+  <form class="order-form" onsubmit="event.preventDefault(); alert('धन्यवाद! आपका ऑर्डर प्राप्त हो गया है.');">
+    <h3>ऑर्डर करें / Order Now</h3>
+    <input type="text" placeholder="आपका नाम / Your Name" required>
+    <input type="tel" placeholder="मोबाइल नंबर / Mobile Number" required>
+    <input type="number" placeholder="Quantity (kg)" required>
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>

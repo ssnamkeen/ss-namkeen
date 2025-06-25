@@ -1,4 +1,3 @@
-
 body {
   font-family: sans-serif;
   background: #fff8e1;
@@ -30,4 +29,21 @@ img {
 }
 select {
   margin-left: 15px;
+}
+.order-form {
+  margin: 20px auto;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.order-form input, .order-form button {
+  padding: 10px;
+  font-size: 16px;
+}
+.order-form button {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
